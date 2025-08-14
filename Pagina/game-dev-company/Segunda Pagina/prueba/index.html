@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jkeicedev.Studio — Gaming</title>
+  <meta name="description" content="Landing page gaming moderna de Jkeicedev.Studio, hecha con HTML, CSS y JavaScript puros." />
+  <meta name="theme-color" content="#0a0b0f">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <a class="skip" href="#main">Saltar al contenido</a>
+
+  <!-- NAV -->
+  <header class="nav" role="banner">
+    <div class="container nav-inner">
+      <a href="#" class="brand" aria-label="Inicio Jkeicedev.Studio">
+        <span class="brand__logo" aria-hidden="true"></span>
+        <strong class="brand__name">Jkeicedev.<span>Studio</span></strong>
+      </a>
+      <nav class="nav-links" aria-label="principal">
+        <a href="#features">Características</a>
+        <a href="#galeria">Galería</a>
+        <a href="#precios">Precios</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <div class="nav-cta" role="navigation" aria-label="acciones">
+        <a class="btn btn--ghost" href="#login"><span class="kbd">Entrar</span></a>
+        <a class="btn btn--primary glow" href="#descargar">Descargar</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow" aria-hidden="true">Nuevo parche 1.4 · <span style="color:var(--brand-2)">Ray Tracing</span> mejorado</span>
+          <h1 id="hero-title">La experiencia <span class="accent">gaming</span> que te pone en modo <span class="accent">pro</span>.</h1>
+          <p class="lead">Optimiza FPS, sincroniza tus periféricos RGB y descubre juegos con rankings en tiempo real. Todo en una sola plataforma.</p>
+          <div class="actions">
+            <a class="btn btn--primary glow" href="#descargar">Empezar gratis</a>
+            <a class="btn" href="#demo">Ver demo</a>
+          </div>
+          <div class="stats" aria-label="estadísticas">
+            <div class="stat" aria-hidden="false"><h3>+120k</h3><p>Gamers activos</p></div>
+            <div class="stat"><h3>240</h3><p>Títulos soportados</p></div>
+            <div class="stat"><h3>1.2ms</h3><p>Latencia media UI</p></div>
+          </div>
+        </div>
+
+        <aside class="card-hero float" aria-label="vista previa de la plataforma">
+          <div class="screen" role="img" aria-label="Captura de plataforma gaming"></div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="section" aria-labelledby="features-title">
+      <div class="container">
+        <h2 id="features-title">Power-ups que marcan la diferencia</h2>
+        <div class="grid grid-3">
+          <article class="feature reveal" aria-labelledby="f1">
+            <div class="badge" aria-hidden="true">🎮</div>
+            <h3 id="f1">Overlay en el juego</h3>
+            <p>Muestra FPS, temps de GPU/CPU y controles rápidos sin salir del juego.</p>
+          </article>
+          <article class="feature reveal" aria-labelledby="f2">
+            <div class="badge" aria-hidden="true">⚡</div>
+            <h3 id="f2">Boost de rendimiento</h3>
+            <p>Cierra procesos pesados y ajusta perfiles con un clic para ganar FPS.</p>
+          </article>
+          <article class="feature reveal" aria-labelledby="f3">
+            <div class="badge" aria-hidden="true">🌈</div>
+            <h3 id="f3">RGB Sync</h3>
+            <p>Sincroniza efectos de luz con la música o eventos del juego.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERÍA -->
+    <section id="galeria" class="section" aria-labelledby="galeria-title">
+      <div class="container">
+        <h2 id="galeria-title">Explora la colección</h2>
+        <div class="gallery" role="list">
+          <figure class="tile tile--a tile--wide reveal" role="listitem"><img loading="lazy" src="https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=1600&auto=format&fit=crop" alt="Shooter futurista"/><figcaption class="tag">Shooter</figcaption></figure>
+          <figure class="tile tile--b tile--tall reveal" role="listitem"><img loading="lazy" src="https://images.unsplash.com/photo-1605901309584-818e25960a8b?q=80&w=1200&auto=format&fit=crop" alt="RPG mundo abierto"/><figcaption class="tag">RPG</figcaption></figure>
+          <figure class="tile tile--c tile--tall reveal" role="listitem"><img loading="lazy" src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1200&auto=format&fit=crop" alt="Carreras neon"/><figcaption class="tag">Racing</figcaption></figure>
+          <figure class="tile tile--a tile--wide reveal" role="listitem"><img loading="lazy" src="https://images.unsplash.com/photo-1542751110-97427bbecf20?q=80&w=1600&auto=format&fit=crop" alt="Aventura cooperativa"/><figcaption class="tag">Co-op</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA PRECIOS / NEWSLETTER -->
+    <section id="precios" class="section" aria-labelledby="precios-title">
+      <div class="container">
+        <div class="cta reveal">
+          <div>
+            <h2 id="precios-title">Plan Free para empezar. <span class="accent">Pro</span> cuando quieras.</h2>
+            <p>Sin tarjetas. Cancela cuando quieras. Descuentos para equipos y LAN centers.</p>
+          </div>
+          <form id="form-news" class="card-hero" autocomplete="on" aria-label="Suscribirse a novedades">
+            <label for="email" class="sr-only">Correo</label>
+            <input id="email" name="email" type="email" inputmode="email" required placeholder="tu@email.com" class="input-email" />
+            <div style="display:flex; gap:10px; margin-top:10px; flex-wrap:wrap">
+              <button class="btn btn--primary glow" type="submit">Quiero novedades</button>
+              <button class="btn" type="button" id="copy">Copiar código -20%</button>
+            </div>
+            <p id="msg" style="margin:.6rem 0 0; color:var(--muted)">Te enviaremos perks y parches nuevos.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="contacto" role="contentinfo">
+    <div class="container foot">
+      <div>
+        <div class="brand" style="margin-bottom:10px">
+          <span class="brand__logo" aria-hidden="true"></span>
+          <strong class="brand__name">Jkeicedev.<span>Studio</span></strong>
+        </div>
+        <p>Hecho con ❤️ para la comunidad. © <span id="year"></span></p>
+      </div>
+      <div>
+        <h4>Comunidad</h4>
+        <div class="links">
+          <a href="#">Discord</a>
+          <a href="#">Torneos</a>
+          <a href="#">Blog</a>
+        </div>
+      </div>
+      <div>
+        <h4>Soporte</h4>
+        <div class="links">
+          <a href="#">Estado del servicio</a>
+          <a href="#">Centro de ayuda</a>
+          <a href="#">Reportar bug</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js" defer></script>
+</body>
+</html>
