@@ -1,205 +1,152 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GameDev Studios - Creadores de Experiencias Digitales</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jkeicedev.Studio — Gaming</title>
+  <meta name="description" content="Landing page gaming moderna de Jkeicedev.Studio, hecha con HTML, CSS y JavaScript puros." />
+  <meta name="theme-color" content="#0a0b0f">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <nav class="navbar">
-            <div class="nav-container">
-                <div class="logo">
-                    <i class="fas fa-gamepad"></i>
-                    <span>GameDev Studios</span>
-                </div>
-                <ul class="nav-menu">
-                    <li><a href="#home" class="nav-link">Inicio</a></li>
-                    <li><a href="#about" class="nav-link">Nosotros</a></li>
-                    <li><a href="#games" class="nav-link">Juegos</a></li>
-                    <li><a href="#contact" class="nav-link">Contacto</a></li>
-                    <li><a href="#" class="nav-link admin-btn" onclick="showAdminLogin()">Admin</a></li>
-                </ul>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-        </nav>
-    </header>
+  <a class="skip" href="#main">Saltar al contenido</a>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">Creamos Experiencias Digitales Extraordinarias</h1>
-            <p class="hero-subtitle">Somos GameDev Studios, especialistas en el desarrollo de juegos móviles y aplicaciones innovadoras que cautivan a millones de usuarios.</p>
-            <div class="hero-buttons">
-                <button class="btn btn-primary">Ver Nuestros Juegos</button>
-                <button class="btn btn-secondary">Conoce Más</button>
-            </div>
-        </div>
-        <div class="hero-image">
-            <i class="fas fa-rocket"></i>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">Sobre Nosotros</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <h3>Innovación y Creatividad</h3>
-                    <p>En GameDev Studios, combinamos tecnología de vanguardia con creatividad sin límites para crear juegos y aplicaciones que marcan la diferencia. Nuestro equipo de desarrolladores apasionados trabaja incansablemente para ofrecer experiencias únicas.</p>
-                    <div class="stats">
-                        <div class="stat">
-                            <h4>50+</h4>
-                            <p>Juegos Desarrollados</p>
-                        </div>
-                        <div class="stat">
-                            <h4>2M+</h4>
-                            <p>Descargas</p>
-                        </div>
-                        <div class="stat">
-                            <h4>5</h4>
-                            <p>Años de Experiencia</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-image">
-                    <i class="fas fa-users"></i>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Games Section -->
-    <section id="games" class="games">
-        <div class="container">
-            <h2 class="section-title">Nuestros Juegos y Aplicaciones</h2>
-            <div class="games-grid" id="gamesGrid">
-                <!-- Los juegos se cargarán dinámicamente con JavaScript -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Contactanos</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>Email</h4>
-                            <p>info@gamedevstudios.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h4>Teléfono</h4>
-                            <p>+1 (555) 123-4567</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h4>Ubicación</h4>
-                            <p>Silicon Valley, CA</p>
-                        </div>
-                    </div>
-                </div>
-                <form class="contact-form">
-                    <input type="text" placeholder="Nombre" required>
-                    <input type="email" placeholder="Email" required>
-                    <textarea placeholder="Mensaje" rows="5" required></textarea>
-                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="logo">
-                        <i class="fas fa-gamepad"></i>
-                        <span>GameDev Studios</span>
-                    </div>
-                    <p>Creando el futuro del entretenimiento digital.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Enlaces</h4>
-                    <ul>
-                        <li><a href="#home">Inicio</a></li>
-                        <li><a href="#about">Nosotros</a></li>
-                        <li><a href="#games">Juegos</a></li>
-                        <li><a href="#contact">Contacto</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Síguenos</h4>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 GameDev Studios. Todos los derechos reservados.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Admin Login Modal -->
-    <div id="adminModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeAdminModal()">&times;</span>
-            <h2>Acceso de Administrador</h2>
-            <form id="adminLoginForm">
-                <input type="text" id="adminUsername" placeholder="Usuario" required>
-                <input type="password" id="adminPassword" placeholder="Contraseña" required>
-                <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
-            </form>
-        </div>
+  <!-- NAV -->
+  <header class="nav" role="banner">
+    <div class="container nav-inner">
+      <a href="#" class="brand" aria-label="Inicio Jkeicedev.Studio">
+        <span class="brand__logo" aria-hidden="true"></span>
+        <strong class="brand__name">Jkeicedev.<span>Studio</span></strong>
+      </a>
+      <nav class="nav-links" aria-label="principal">
+        <a href="#features">Características</a>
+        <a href="#galeria">Galería</a>
+        <a href="#precios">Precios</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <div class="nav-cta" role="navigation" aria-label="acciones">
+        <a class="btn btn--ghost" href="#login"><span class="kbd">Entrar</span></a>
+        <a class="btn btn--primary glow" href="#descargar">Descargar</a>
+      </div>
     </div>
+  </header>
 
-    <!-- Admin Panel -->
-    <div id="adminPanel" class="admin-panel">
-        <div class="admin-header">
-            <h2>Panel de Administración</h2>
-            <button class="btn btn-secondary" onclick="logout()">Cerrar Sesión</button>
+  <main id="main" tabindex="-1">
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow" aria-hidden="true">Nuevo parche 1.4 · <span style="color:var(--brand-2)">Ray Tracing</span> mejorado</span>
+          <h1 id="hero-title">La experiencia <span class="accent">gaming</span> que te pone en modo <span class="accent">pro</span>.</h1>
+          <p class="lead">Optimiza FPS, sincroniza tus periféricos RGB y descubre juegos con rankings en tiempo real. Todo en una sola plataforma.</p>
+          <div class="actions">
+            <a class="btn btn--primary glow" href="#descargar">Empezar gratis</a>
+            <a class="btn" href="#demo">Ver demo</a>
+          </div>
+          <div class="stats" aria-label="estadísticas">
+            <div class="stat" aria-hidden="false"><h3>+120k</h3><p>Gamers activos</p></div>
+            <div class="stat"><h3>240</h3><p>Títulos soportados</p></div>
+            <div class="stat"><h3>1.2ms</h3><p>Latencia media UI</p></div>
+          </div>
         </div>
-        <div class="admin-content">
-            <h3>Agregar Nuevo Juego/Aplicación</h3>
-            <form id="addGameForm">
-                <input type="text" id="gameTitle" placeholder="Título del juego" required>
-                <textarea id="gameDescription" placeholder="Descripción" required></textarea>
-                <input type="url" id="gameImage" placeholder="URL de la imagen" required>
-                <select id="gameCategory" required>
-                    <option value="">Seleccionar categoría</option>
-                    <option value="Acción">Acción</option>
-                    <option value="Aventura">Aventura</option>
-                    <option value="Puzzle">Puzzle</option>
-                    <option value="Estrategia">Estrategia</option>
-                    <option value="Aplicación">Aplicación</option>
-                </select>
-                <input type="url" id="gameDownloadLink" placeholder="Enlace de descarga" required>
-                <button type="submit" class="btn btn-primary">Agregar Juego</button>
-            </form>
+
+        <aside class="card-hero float" aria-label="vista previa de la plataforma">
+          <div class="screen" role="img" aria-label="Captura de plataforma gaming"></div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="section" aria-labelledby="features-title">
+      <div class="container">
+        <h2 id="features-title">Power-ups que marcan la diferencia</h2>
+        <div class="grid grid-3">
+          <article class="feature reveal" aria-labelledby="f1">
+            <div class="badge" aria-hidden="true">🎮</div>
+            <h3 id="f1">Overlay en el juego</h3>
+            <p>Muestra FPS, temps de GPU/CPU y controles rápidos sin salir del juego.</p>
+          </article>
+          <article class="feature reveal" aria-labelledby="f2">
+            <div class="badge" aria-hidden="true">⚡</div>
+            <h3 id="f2">Boost de rendimiento</h3>
+            <p>Cierra procesos pesados y ajusta perfiles con un clic para ganar FPS.</p>
+          </article>
+          <article class="feature reveal" aria-labelledby="f3">
+            <div class="badge" aria-hidden="true">🌈</div>
+            <h3 id="f3">RGB Sync</h3>
+            <p>Sincroniza efectos de luz con la música o eventos del juego.</p>
+          </article>
         </div>
+      </div>
+    </section>
+
+    <!-- GALERÍA -->
+    <section id="galeria" class="section" aria-labelledby="galeria-title">
+      <div class="container">
+        <h2 id="galeria-title">Explora la colección</h2>
+        <div class="gallery" role="list">
+          <figure class="tile tile--a tile--wide reveal" role="listitem"><img loading="lazy" src="https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=1600&auto=format&fit=crop" alt="Shooter futurista"/><figcaption class="tag">Shooter</figcaption></figure>
+          <figure class="tile tile--b tile--tall reveal" role="listitem"><img loading="lazy" src="https://images.unsplash.com/photo-1605901309584-818e25960a8b?q=80&w=1200&auto=format&fit=crop" alt="RPG mundo abierto"/><figcaption class="tag">RPG</figcaption></figure>
+          <figure class="tile tile--c tile--tall reveal" role="listitem"><img loading="lazy" src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1200&auto=format&fit=crop" alt="Carreras neon"/><figcaption class="tag">Racing</figcaption></figure>
+          <figure class="tile tile--a tile--wide reveal" role="listitem"><img loading="lazy" src="https://images.unsplash.com/photo-1542751110-97427bbecf20?q=80&w=1600&auto=format&fit=crop" alt="Aventura cooperativa"/><figcaption class="tag">Co-op</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA PRECIOS / NEWSLETTER -->
+    <section id="precios" class="section" aria-labelledby="precios-title">
+      <div class="container">
+        <div class="cta reveal">
+          <div>
+            <h2 id="precios-title">Plan Free para empezar. <span class="accent">Pro</span> cuando quieras.</h2>
+            <p>Sin tarjetas. Cancela cuando quieras. Descuentos para equipos y LAN centers.</p>
+          </div>
+          <form id="form-news" class="card-hero" autocomplete="on" aria-label="Suscribirse a novedades">
+            <label for="email" class="sr-only">Correo</label>
+            <input id="email" name="email" type="email" inputmode="email" required placeholder="tu@email.com" class="input-email" />
+            <div style="display:flex; gap:10px; margin-top:10px; flex-wrap:wrap">
+              <button class="btn btn--primary glow" type="submit">Quiero novedades</button>
+              <button class="btn" type="button" id="copy">Copiar código -20%</button>
+            </div>
+            <p id="msg" style="margin:.6rem 0 0; color:var(--muted)">Te enviaremos perks y parches nuevos.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="contacto" role="contentinfo">
+    <div class="container foot">
+      <div>
+        <div class="brand" style="margin-bottom:10px">
+          <span class="brand__logo" aria-hidden="true"></span>
+          <strong class="brand__name">Jkeicedev.<span>Studio</span></strong>
+        </div>
+        <p>Hecho por Jkeicedev.Studio © <span id="year"></span></p>
+      </div>
+      <div>
+        <h4>Comunidad</h4>
+        <div class="links">
+          <a href="#">Tiktok</a>
+          <a href="#">Facebook</a>
+          <a href="#">Youtube</a>
+        </div>
+      </div>
+      <div>
+        <h4>Soporte</h4>
+        <div class="links">
+          <a href="#">Estado del servicio</a>
+          <a href="#">Centro de ayuda</a>
+          <a href="#">Reportar bug</a>
+        </div>
+      </div>
     </div>
+  </footer>
 
-    <script src="script.js"></script>
+  <script src="scripts/main.js" defer></script>
 </body>
 </html>
